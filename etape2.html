@@ -9,28 +9,32 @@
     <style>
         body {
             background-color:  #ddeeaa;
+            margin:10px 0;
+            padding: 0;
+            /* text-align a cause d'internet explorer (les anciennes versions d'IE)  */
+            text-align: center;
         }
         
         #conteneur {
-            /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION a donner une largeur */
+            /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION a donner une largeur (cest une marge automatique) */
             margin: 0 auto;
             width: 800px;
             background-color: white;
-            border: 2px solid #aabb44
+            border: 2px solid #aabb44;
+            text-align: left;
         }
         header h1 {
             /* hauteur du h1 dans le header  */
-            height: 250px;
+            height: 258px;
         }
-    
-    
-    
-    
+
     </style>
 </head>
 <body>
+            <!-- cette div contient l'ensemble de la page on peut parfois l'appeler "wrapper" "contenu" ou parfois" div id=main" ect-->
         <div id="conteneur">
             <!-- en tête de la page -->
+
         <header>
             <h1><a href="#" title="Colored Design">Colored Design</a></h1>
             <nav>

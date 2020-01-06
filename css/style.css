@@ -1,0 +1,124 @@
+body {
+
+    /* text-align a cause d'internet explorer (les anciennes versions d'IE)  */
+    text-align: center;
+     /* font: 0.8em "Trebuchet MS",  Helvetica, sans-serif;  */
+     font:0.8 eme 'PT Sans', sans-serif;
+    /* font-size: 0.8em;
+    font-family: "Trebuchet MS",  Helvetica, sans-serif; */
+    margin:10px 0;
+    padding: 0;
+    background-color:  #dea;
+}
+
+#conteneur {
+    /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION a donner une largeur (cest une marge automatique) */
+    margin: 0 auto;
+    width: 800px;
+    background-color: white;
+    border: 2px solid #aabb44;
+    text-align: left;
+}
+header h1 {
+    /* hauteur du h1 dans le header  qui permet de mettre l'image en font,la taille est dictée par la hauteur à l'élément */
+    height: 258px;
+    /* top ou bottom pour l'image dans la h1 */
+    background: url(../img/apple.jpg) no-repeat left bottom ;
+    /* background-image: url(../img/apple.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom; */
+}
+
+
+header h1 a  {
+    /* on donne des dimensions au lien,chose possible grâce à la propriété display block qui transforme le lien en élément type block auquel on peut donner des propriétées de taille.On met aussi l'image de font qui a les meme dimensions que le cadre ainsi créé  */
+    width: 400px;
+    height: 70px;
+    display: block;
+    /* des l'instant ou on change d'inline en block il est préférable de mettre des tailles largeur et ou hauteur à l'élément */
+    background: url(../img/title.gif) no-repeat right;
+    position: relative;
+    left: 350px;
+    top: 15px;
+      /* pour masquer le texte */
+    text-indent: -5000px;
+}
+ul#menu {
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    /* on met l'image de font avec un décalage de 25 pixels vers le haut */
+    background:url(../img/bg_menu.gif) repeat-x 0 -25px;
+
+    list-style-type: none;
+}
+
+ul#menu li a:hover{
+    /* on décale l'image de font au passage de la souris au survol de la souris ce qui fait une animation */
+    background: url(../img/bg_menu.gif)  repeat-x 0 0;
+
+}
+ul#menu li {
+    /* on rend les li flotant pour les afficher */
+    float: left;
+    text-align: center;
+   
+
+}
+ul#menu li a {
+    width: 130px;
+    /* grace a la propriété display block on peut dimensionner les a */
+    display: block;
+    border-right: 2px solid #dea;
+
+    font-size: 1.2eme;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main {
+    /* padding pour main afin de caler les contenu dans main et de laisser la place a l'image en arriére plan */
+    padding: 0 30px 0 100px;
+    background: url(../img/bg_page.gif) no-repeat left top;
+    /* on crée un espace à gauche et à droite de l'image */
+    background-position: 15px 15px;
+}
+main h2 {
+    padding-left: 25px;
+    font-size: 1.4em;
+    width: max-content;
+    line-height: 25px;
+    color: #9b2;
+    background: url(../img/little_apple.gif) no-repeat left bottom ;
+    border-bottom: 1px solid #9b2;
+}
+main h3 {
+    margin-left: 15px;
+    padding-left: 5px;
+    width: max-content;
+    border-bottom: 1px solid #9b2;
+    border-left: 3px solid #9b2;
+    color:#9b2
+}
+main p {
+    line-height: 1.7em;
+    text-justify: justify;
+}
+main a {
+    color:#8a0
+}
+main a:hover {
+    color: #9b2;
+}
+footer p {
+    margin: 0;
+    padding-right: 30px;
+    color: #8a0;
+    line-height: 30px;
+    text-align: right;
+}
+

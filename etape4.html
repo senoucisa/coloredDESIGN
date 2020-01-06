@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ColoredDESIGN 4</title>
+    <style>
+        body {
+
+            /* text-align a cause d'internet explorer (les anciennes versions d'IE)  */
+            text-align: center;
+             font: 0.8em "Trebuchet MS",  Helvetica, sans-serif; 
+            /* font-size: 0.8em;
+            font-family: "Trebuchet MS",  Helvetica, sans-serif; */
+            margin:10px 0;
+            padding: 0;
+            background-color:  #dea;
+        }
+        
+        #conteneur {
+            /* margin 0 et auto pour centrer le conteneur dans la page ATTENTION a donner une largeur (cest une marge automatique) */
+            margin: 0 auto;
+            width: 800px;
+            background-color: white;
+            border: 2px solid #aabb44;
+            text-align: left;
+        }
+        header h1 {
+            /* hauteur du h1 dans le header  */
+            height: 258px;
+            /* top ou bottom pour l'image dans la h1 */
+            background: url(img/apple.jpg) no-repeat left bottom ;
+            /* background-image: url(img/apple.jpg);
+            background-repeat: no-repeat;
+            background-position: left bottom; */
+        }
+        
+        ul#menu li a:hover{
+            background: url(img/bg_menu.gif)  repeat-x 0 0;
+
+        }
+        main {
+            /* padding pour main afin de caler les contenu dans main et de laisser la place a l'image en arriére plan */
+            padding: 0 30px 0 100px;
+            background: url(img/bg_page.gif) no-repeat left top;
+        }
+        main h2 {
+            padding-left: 25px;
+            font-size: 1.4em;
+            line-height: 25px;
+            color: #9b2;
+            background: url(img/little_apple.gif) no-repeat left bottom ;
+            border-bottom: 1px solid #9b2;
+        }
+        main h3 {
+            margin-left: 15px;
+            padding-left: 5px;
+            border-bottom: 1px solid #9b2;
+            border-left: 3px solid #9b2;
+            color:#9b2
+        }
+        main p {
+            line-height: 1.7em;
+            text-justify: justify;
+        }
+        main a {
+            color:#8a0
+        }
+        main a:hover {
+            color: #9b2;
+        }
+        footer p {
+            margin: 0;
+            padding-right: 30px;
+            color: #8a0;
+            line-height: 30px;
+            text-align: right;
+        }
+        header h1 a  {
+            /* l'image en arriére plan du h1 */
+            width: 400px;
+            height: 70px;
+            display: block;
+            /* des l'instant ou on change d'inline en block il est préférable de mettre des tailles largeur et ou hauteur à l'élément */
+            background: url(img/title.gif) no-repeat right;
+            position: relative;
+            left: 350px;
+            top: 15px;
+              /* pour masquer le texte */
+            text-indent: -5000px;
+        }
+        ul#menu {
+            height: 35px;
+            margin: 0;
+            padding: 0;
+            background:url(img/bg_menu.gif) repeat-x 0 -25px;
+
+            list-style-type: none;
+        }
+        ul#menu li {
+            float: left;
+            text-align: center;
+           
+
+        }
+        ul#menu li a {
+            width: 130px;
+            display: block;
+            border-right: 2px solid #dea;
+
+            font-size: 1.2eme;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 25px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+    
+    
+
+    </style>
+</head>
+<body>
+            <!-- cette div contient l'ensemble de la page on peut parfois l'appeler "wrapper" "contenu" ou parfois" div id=main" ect-->
+        <div id="conteneur">
+            <!-- en tête de la page -->
+
+        <header>
+            <h1><a href="#" title="Colored Design">Colored Design</a></h1>
+            <nav>
+            <!-- nav>ul>li*5[title]{etape n° $}  ceci est le code pour gagner du temps-->
+            <!-- on rajoute id=menu à notre ul qui sert à la navigation -->
+                    <ul id="menu">
+                        <li><a href="etape1.html" title="Colored Design &Eacute;tape1">&Eacute;tape n°1</a></li>
+                        <li><a href="etape2.html" title="Colored Design &Eacute;tape2">&Eacute;tape n°2</a></li>
+                        <li><a href="etape3.html" title="Colored Design &Eacute;tape3">&Eacute;tape n°3</a></li>
+                        <li><a href="etape4.html" title="Colored Design &Eacute;tape4">&Eacute;tape n°4</a></li>
+                        <li><a href="etape5.html" title="Colored Design &Eacute;tape5">&Eacute;tape n°5</a></li>
+                    </ul>
+            </nav>
+        </header>
+            <!-- contenu principal -->
+    <main>
+            <h2>Un titre /// étape 3</h2>
+
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus harum repudiandae distinctio, soluta culpa eos beatae dolores consequuntur non placeat dicta odio veritatis            ut, accusamus blanditiis. Vitae soluta ullam molestiae!
+                </p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, quasi numquam provident laudantium, error a animi atque voluptates laborum magni laboriosam deserunt commodi,             sapiente quam fugit dolorum eius ratione accusamus.</p><br>
+        
+            <h2>Un sous titre 1 /// </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis adipisci nam praesentium accusantium dolorem mollitia at suscipit animi, omnis unde ex nisi reprehenderit                 incidunt assumenda culpa delectus accusamus, in et?</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur  <a href="http://auchan.fr">Site Auchan</a>adipisicing elit. Quidem praesentium maiores enim, aliquam sed nobis ad ea aperiam laborum aspernatur omnis asperiores soluta iusto               eaque ex tenetur perspiciatis nihil molestiae!</p><br>
+
+            <h2>Un sous titre 2 /// </h2>
+            <h3>Sous titre de niveau 2</h3>
+      
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora, id harum non doloremque blanditiis fugiat debitis similique aut magni fuga fugit, doloribus perferendis minus pariatur ducimus expedita accusamus vero!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odit officiis, expedita repellendus magni quos omnis, aperiam qui, maxime dignissimos quidem. Adipisci repudiandae harum consequuntur laudantium quas nam similique autem.</p>
+        
+            <h2>Un sous titre 3 /// </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, veritatis! Mollitia tenetur itaque similique quaerat nisi nemo ad, accusamus corrupti quia voluptas, voluptates explicabo ipsam minus consequuntur praesentium quae cupiditate.</p>
+    </main>
+        <!-- pied de page -->
+            <footer>
+                <p> Réalisation des codes HTML/CSS,du tutoriel et du Design par Ouali Samia</p>
+            </footer>
+        </div> 
+</body>
+</html>
